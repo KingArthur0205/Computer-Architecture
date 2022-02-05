@@ -1,0 +1,30 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or.hdl
+
+ /**
+ * Or gate:
+ * out = 1 if (a == 1 or b == 1)
+ *       0 otherwise
+ */
+
+/*
+Or returns 1 if (0, 1) or (1, 0) or (1, 1).
+Nand(a, b) returns 1 if (1, 0) or (0, 1), or (0, 0)
+Take Not(a) and Not(b). 
+If a and b are both 0, then !a and !b are 1, input them into Nand gives0 .
+*/
+CHIP Or {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    //Get !a
+    Nand(a = a, b = a, out = c);
+    //Get !b
+    Nand(a = b, b = b, out = d);
+    //If a == 0 and b == 0, then !a == 1, !b == 1. Nand(!a, !b) = 0
+    //All other cases grant Nand(!a, !b) 1
+    Nand(a = c, b = d, out = out);
+}
