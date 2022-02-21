@@ -7,3 +7,5 @@
 ## Chapter 2 Boolean Arithmetic
 1. [Generic Adders and Intro to ALU](https://github.com/KingArthur0205/Computer-Architecture/blob/main/From_Nand_To_Tetris/Ch2%20Boolean%20Arithmetic/%E3%80%90CA%E3%80%91Day5.pdf)
 2. [Adder Implementations](https://github.com/KingArthur0205/Computer-Architecture/blob/main/From_Nand_To_Tetris/Ch2%20Boolean%20Arithmetic/%E3%80%90CA%E3%80%91Day6.pdf)
+## Chapter 3 Sequential Logic
+1. [Intro to Clock, Flip-Flops, Registers, Memories, and Counters](https://github.com/KingArthur0205/Computer-Architecture/blob/main/From_Nand_To_Tetris/Ch3%20Sequential%20Logic/%E3%80%90CA%E3%80%91Day7.pdf)
